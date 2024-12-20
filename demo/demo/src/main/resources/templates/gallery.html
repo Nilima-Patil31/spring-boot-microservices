@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - [Company Name]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+        .container {
+            padding: 40px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #34495e;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .gallery-item {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-item:focus img {
+            outline: 2px solid #1abc9c;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            margin: auto;
+        }
+        .lightbox:target {
+            display: flex;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gallery</h1>
+    <p>Explore our work and see how we bring ideas to life</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Services</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <h2 class="section-title">Our Work</h2>
+
+    <div class="gallery">
+        <a href="#lightbox1" class="gallery-item">
+            <img src="image1.jpg" alt="Project 1">
+        </a>
+        <a href="#lightbox2" class="gallery-item">
+            <img src="image2.jpg" alt="Project 2">
+        </a>
+        <a href="#lightbox3" class="gallery-item">
+            <img src="image3.jpg" alt="Project 3">
+        </a>
+        <a href="#lightbox4" class="gallery-item">
+            <img src="image4.jpg" alt="Project 4">
+        </a>
+        <a href="#lightbox5" class="gallery-item">
+            <img src="image5.jpg" alt="Project 5">
+        </a>
+        <a href="#lightbox6" class="gallery-item">
+            <img src="image6.jpg" alt="Project 6">
+        </a>
+    </div>
+
+    <div id="lightbox1" class="lightbox">
+        <img src="image1.jpg" alt="Project 1">
+    </div>
+    <div id="lightbox2" class="lightbox">
+        <img src="image2.jpg" alt="Project 2">
+    </div>
+    <div id="lightbox3" class="lightbox">
+        <img src="image3.jpg" alt="Project 3">
+    </div>
+    <div id="lightbox4" class="lightbox">
+        <img src="image4.jpg" alt="Project 4">
+    </div>
+    <div id="lightbox5" class="lightbox">
+        <img src="image5.jpg" alt="Project 5">
+    </div>
+    <div id="lightbox6" class="lightbox">
+        <img src="image6.jpg" alt="Project 6">
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 [Company Name]. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

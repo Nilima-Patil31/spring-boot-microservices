@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - [Company Name]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+        .container {
+            padding: 40px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #34495e;
+            margin-bottom: 20px;
+        }
+        .about-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+        .team-member {
+            text-align: center;
+            width: 200px;
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #1abc9c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #16a085;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>About Gov.UK</h1>
+    <p>Our journey, mission, and vision for the future</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <section>
+        <h2 class="section-title">Our Story</h2>
+        <p class="about-text">[Company Name] was founded in [Year] with a mission to provide innovative solutions to help businesses grow. Over the years, we have expanded our services to meet the ever-evolving needs of our clients. With a team of passionate professionals, we are dedicated to providing top-quality services that exceed expectations.</p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Mission & Vision</h2>
+        <div>
+            <h3>Our Mission</h3>
+            <p class="about-text">Our mission is to empower businesses with the tools and strategies they need to succeed in an increasingly competitive market. We strive to deliver high-quality products and services that foster growth and innovation.</p>
+        </div>
+        <div>
+            <h3>Our Vision</h3>
+            <p class="about-text">Our vision is to become a leading global provider of cutting-edge solutions, enabling businesses of all sizes to unlock their full potential. We are committed to making a positive impact on every client we serve.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Meet Our Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="team-member1.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>COO</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member3.jpg" alt="Team Member 3">
+                <h3>Emily Johnson</h3>
+                <p>CTO</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Contact Us</h2>
+        <p>If you have any questions or would like to learn more about our services, feel free to reach out to us using the form below:</p>
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 [Company Name]. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
